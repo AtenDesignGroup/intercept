@@ -1,5 +1,5 @@
 {
-  "name": "drupal/intercept_core",
+  "name": "drupal/intercept",
   "type": "drupal-module",
   "description": "Drupal InterCEPT module.",
   "keywords": [
