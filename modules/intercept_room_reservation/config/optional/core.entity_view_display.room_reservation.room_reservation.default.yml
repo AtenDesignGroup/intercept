@@ -1,4 +1,3 @@
-uuid: 815395ec-548c-40fe-a6b9-ca8adced0ec5
 langcode: en
 status: true
 dependencies:
@@ -13,9 +12,12 @@ dependencies:
     - field.field.room_reservation.room_reservation.field_room
     - field.field.room_reservation.room_reservation.field_status
     - field.field.room_reservation.room_reservation.field_user
+    - image.style.3to2_270x180
   module:
     - datetime_range
+    - image
     - intercept_room_reservation
+    - options
     - text
 id: room_reservation.room_reservation.default
 targetEntityType: room_reservation
@@ -23,97 +25,95 @@ bundle: room_reservation
 mode: default
 content:
   field_attendee_count:
-    weight: 28
+    weight: 2
+    label: hidden
     settings:
-      placeholder: ''
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    type: number
+    type: number_integer
     region: content
   field_dates:
-    weight: 30
-    settings: {  }
+    weight: 5
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
     third_party_settings: {  }
     type: daterange_default
     region: content
   field_event:
-    weight: 32
+    weight: 7
+    label: above
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      link: true
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_reference_label
     region: content
   field_group_name:
-    weight: 29
+    weight: 4
+    label: above
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: string_textfield
+    type: string
     region: content
   field_meeting_dates:
-    weight: 31
-    settings: {  }
+    weight: 6
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
     third_party_settings: {  }
     type: daterange_default
     region: content
   field_refreshments:
-    weight: 33
+    weight: 8
+    label: above
     settings:
-      display_label: true
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
-  field_refreshments_description:
-    weight: 35
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
+    type: boolean
     region: content
   field_room:
-    weight: 27
+    weight: 2
+    label: above
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      link: true
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_status:
-    weight: 34
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
+    type: entity_reference_label
     region: content
   field_user:
-    weight: 26
+    weight: 1
+    label: above
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      link: true
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_reference_label
     region: content
   name:
-    type: string_textfield
+    label: above
+    type: string
     weight: -4
     region: content
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
   user_id:
-    type: entity_reference_autocomplete
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    label: hidden
+    type: author
+    weight: 0
     region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
+  attendees_full: true
+  field_refreshments_description: true
+  field_status: true
   image: true
   location: true
+  location_full: true

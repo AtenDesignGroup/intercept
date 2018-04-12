@@ -1,11 +1,14 @@
+uuid: 232eb81c-21f5-48dc-bd21-2c78ef8ad9db
 langcode: en
 status: true
 dependencies:
   module:
-    - intercept_room_reservation
-id: room_reservation.field_attendee_count
-field_name: field_attendee_count
-entity_type: room_reservation
+    - node
+_core:
+  default_config_hash: uytZ3Z9SfvXHNh1U1lOzSxZKBiNXE2RkSqn9P5s4VcI
+id: node.field_capacity_max
+field_name: field_capacity_max
+entity_type: node
 type: integer
 settings:
   unsigned: false
