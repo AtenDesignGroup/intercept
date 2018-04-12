@@ -1,0 +1,10 @@
+uuid: 2f25b652-379f-46a5-a71f-545e6da913df
+langcode: en
+status: true
+dependencies:
+  module:
+    - intercept_room_reservation
+id: room_reservation.full
+label: 'Full content'
+targetEntityType: room_reservation
+cache: true

@@ -1,0 +1,19 @@
+reservation_accepted:
+  subject: aoeu
+  body: aoeu
+reservation_rejected:
+  subject: aoeu
+  body: aoeu
+reservation_canceled:
+  subject: ''
+  body: ''
+email:
+  reservation_accepted:
+    subject: aoeu
+    body: aoeu
+  reservation_rejected:
+    subject: test
+    body: test
+  reservation_canceled:
+    subject: ''
+    body: ''

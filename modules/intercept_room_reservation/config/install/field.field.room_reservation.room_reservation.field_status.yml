@@ -1,0 +1,21 @@
+uuid: 805bb679-1998-40c2-8cf0-551a688d4306
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.room_reservation.field_status
+  module:
+    - intercept_room_reservation
+    - options
+id: room_reservation.room_reservation.field_status
+field_name: field_status
+entity_type: room_reservation
+bundle: room_reservation
+label: Status
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

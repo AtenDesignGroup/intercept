@@ -1,0 +1,21 @@
+uuid: 3cade27d-f6f5-47f4-83d5-655d36edc924
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: 8y0pW_J2V44HvCbQa_1A-QZf-h0LIezlrRffwNg4ahY
+id: node.field_room_fees
+field_name: field_room_fees
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

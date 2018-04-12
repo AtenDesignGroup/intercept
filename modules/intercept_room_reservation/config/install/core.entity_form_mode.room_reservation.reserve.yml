@@ -1,0 +1,10 @@
+uuid: 3624a0fd-2cf6-4da6-a308-3251d7b5e395
+langcode: en
+status: true
+dependencies:
+  module:
+    - intercept_room_reservation
+id: room_reservation.reserve
+label: Reserve
+targetEntityType: room_reservation
+cache: true
