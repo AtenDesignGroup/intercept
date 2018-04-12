@@ -28,7 +28,7 @@
     "drupal/consumer_image_styles": "^2.0.0-rc5",
     "drupal/duration_field": "^1.1",
     "drupal/entity_browser": "^2.0-alpha2",
-    "drupal/features": "^3.7",
+    "drupal/features": "^3.5",
     "drupal/field_group": "^1.0",
     "drupal/paragraphs": "^1.2",
     "drupal/date_recur": "^1.0.alpha5",
