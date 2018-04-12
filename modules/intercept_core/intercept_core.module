@@ -11,3 +11,13 @@ function intercept_core_preprocess_page(array &$variables) {
     $variables['#attached']['drupalSettings']['intercept']['consumer'] = $consumer_token;
   }
 }
+
+/**
+ * Implements hook_menu_links_discovered_alter().
+ */
+function intercept_core_menu_links_discovered_alter(&$links) {
+  // Add a warning to the end of route links to the admin section.
+  if (isset($links['user.page'])) {
+    $links['user.page']['title'] = t('Dashboard');
+  }
+}
