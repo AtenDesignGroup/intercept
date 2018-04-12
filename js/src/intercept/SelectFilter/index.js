@@ -113,4 +113,8 @@ SelectFilter.defaultProps = {
   multiple: false,
 };
 
+SelectFilter.defaultProps = {
+  value: PropTypes.arrayOf(String),
+};
+
 export default withStyles(styles, { withTheme: true })(SelectFilter);
