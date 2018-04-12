@@ -11,7 +11,7 @@ dependencies:
   - duration_field
   - editor
   - entity_browser
-  - evaluate
+    #  - evaluate
   - features
   - field
   - file
