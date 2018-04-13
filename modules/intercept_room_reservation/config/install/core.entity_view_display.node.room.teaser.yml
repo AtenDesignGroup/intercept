@@ -5,7 +5,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.room.field_capacity_max
     - field.field.node.room.field_capacity_min
-    - field.field.node.room.image_primary
     - field.field.node.room.field_location
     - field.field.node.room.field_room_fees
     - field.field.node.room.field_room_type

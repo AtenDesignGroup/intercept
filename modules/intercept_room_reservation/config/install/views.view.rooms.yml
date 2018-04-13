@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_capacity_max
-    - field.storage.node.image_primary
     - field.storage.node.field_text_teaser
     - node.type.room
   module:
