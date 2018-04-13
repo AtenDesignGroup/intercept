@@ -22,5 +22,5 @@ events.browse:
 intercept_event.account.events:
   title: 'Events'
   weight: 5
-  route_name: intercept_core.account.events
+  route_name: intercept_event.account.events
   menu_name: account
