@@ -5,8 +5,6 @@ dependencies:
     - field.storage.node.field_location
     - node.type.location
     - node.type.room
-_core:
-  default_config_hash: RipUq8n1T2zhkJjP3LCzo5BYG-m4QWgxLibSjE4C61E
 id: node.room.field_location
 field_name: field_location
 entity_type: node
