@@ -31,7 +31,7 @@ function intercept_core_entity_base_field_info(\Drupal\Core\Entity\EntityTypeInt
   $fields = [];
   if ($entity_type->id() == 'node') {
     $fields['image_primary'] = \Drupal\Core\Field\BaseFieldDefinition::create('entity_reference')
-      ->setLabel(new TranslatableMarkup('Image Primary'))
+      ->setLabel(new TranslatableMarkup('Primary Image'))
       ->setDescription(new TranslatableMarkup('Primary image for nodes required by InterCEPT.'))
       ->setSettings([
         'handler' => 'default:media',
