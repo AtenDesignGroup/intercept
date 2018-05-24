@@ -15,6 +15,7 @@ class EventRegisterConfirmation extends React.PureComponent {
 
     this.state = {
       saved: false,
+      uuid: props.uuid || null,
     };
 
     this.handleConfirm = this.handleConfirm.bind(this);
@@ -24,7 +25,7 @@ class EventRegisterConfirmation extends React.PureComponent {
     const { onConfirm, save } = this.props;
     const uuid = onConfirm();
     save(uuid);
-    this.setState({ saved: true });
+    this.setState({ saved: true, uuid });
   }
 
   render() {
@@ -47,9 +48,10 @@ class EventRegisterConfirmation extends React.PureComponent {
         onCancel,
       }
       : {
-        confirmText: 'Submit',
-        cancelText: 'Cancel',
-        heading: 'Confirm Registration',
+        confirmText: 'Yes',
+        cancelText: 'No',
+        heading,
+        text,
         onConfirm: this.handleConfirm,
         onCancel,
       };
